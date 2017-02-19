@@ -16,10 +16,15 @@ p {
     margin: 5px 0 10px 0;
 }
 
-body {
+.bodydiv {
     font-family: Verdana, sans-serif;
 }
 
+.aboutme {
+    float:right;
+    color: aliceblue;
+    
+}
 .ul-menu {
     /* Change styule of element with class "ul-menu" */
     list-style-type: none;
