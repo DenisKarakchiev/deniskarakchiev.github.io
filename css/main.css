@@ -82,3 +82,9 @@ footer {
     float: right;
     padding-right: 20px;
 }
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
