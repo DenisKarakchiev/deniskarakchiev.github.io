@@ -1,47 +1,88 @@
 <!DOCTYPE html>
-<!-- Means that document is using HTML 5 -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Denis Karakchiev</title>
-    <!-- plug in a css-->
     <link rel="stylesheet" href="css/main.css">
-    <!-- adding a bootstrap framework-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Titillium+Web" rel="stylesheet">
 </head>
-<!--New branch testing. Third branch-->
+
 <body>
-   <div class="container">
-   
-    <div class="bodydiv">
-        <nav>
-            <ul class="ul-menu">
-                <!-- Add an active class to the current link. Will work on JS later-->
-                <li><a class="active" href="index.html">Why?</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Used tools</a></li>
-                <!-- Inline styling with css to make the element floating to the right-->
-                <li style="float:right"><a href="#">About me</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flex_h1">
+                        <h1 class="greetings">
+                        Hello, i'm Dan!
+                    </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flex_head_descr">
+                        <p class="descr_me">
+                            Front End Developer.
+                            <br> At this stage - try to become one.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <article>
-            <p>
-                Why i'm doing this?
-                <br> It's all for education. Learn something is very hard for me when i'm not doing this. So i chose this way: read, watch, and do. And through experiments i belive that i can learn something, learn how it works and... How i can find work =)
-            </p>
-        </article>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="index_tech">At this time i use next technologies for work</h2>
+                    <hr class="hr_tech">
+                </div>
+            </div>
+            <div class="flex_icons">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="html"><img src="img/icon_html.png" alt="Html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div><img src="img/icon_css.png" alt="css"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div><img src="img/icon_bootstrap.png" alt="bootstrap"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_icons">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div><img src="img/icon_firefox.png" alt="Firefox DE"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div><img src="img/icon_brackets.png" alt="brackets"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div><img src="img/icon_jquery.png" alt="jQuery"></div>
+                    </div>
+                </div>
+            </div>
 
-        <footer>
-            <div class="container">Denis Karakchiev 2017</div>
-        </footer>
-<!-- Adding jQuery (for future) and bootstrap.js to end of the file because .js files are loads after .html files are built -->
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        </div>
 
-    </div>
-    </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">Denis Karakchiev | 2017</div>
+    </footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

@@ -1,90 +1,62 @@
-/* Css reset to forbid browsers using their own standart styles from Jeff Starr  It handles all the essentials, and ensures relatively universal default browser-style uniformity*/
-
-* {
-    vertical-align: baseline;
-    font-weight: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    border: 0 none;
-    outline: 0;
-    padding: 0;
-    margin: 0;
+header {
+    background-color: #E7E7E7;
+    padding: 50px 0;
 }
 
-p {
-    margin: 5px 0 10px 0;
+h1.greetings {
+    font-family: 'Baloo';
+    font-size: 100px;
+    margin: 200px auto 35px auto;
 }
 
-.bodydiv {
-    font-family: Verdana, sans-serif;
+.flex_h1,
+.flex_head_descr,
+.flex_icons{
+    display: flex;
+    justify-content: center;
 }
 
-.aboutme {
-    float:right;
-    color: aliceblue;
-    
-}
-.ul-menu {
-    /* Change styule of element with class "ul-menu" */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.ul-menu li {
-    /*Change style of each list item of parenting element with class "ul-menu*/
-    float: left
-}
-
-.ul-menu a {
-    display: block;
-    text-decoration: none;
-    color: white;
+p.descr_me {
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 38px;
+    border: 3px #4d4d4d solid;
+    border-radius: 5px;
+    margin: auto auto 90px auto;
+    background: #d5d5d5;
+    width: 580px;
     text-align: center;
-    padding: 14px 16px;
 }
 
-.ul-menu a:hover {
-    /* Change the link color to #111 (black) on hover */
-    background-color: #111;
+h2.index_tech {
+    font-family: 'Titillium Web';
+    font-size: 30px;
 }
 
-
-/* change the color of current link with class "active" that have parent class "ul-menu"*/
-
-.active {
-    background-color: #4CAF50;
+hr.hr_tech {
+    background-color: #E7E7E7;
+    height: 2px;
 }
 
+.flex_icons img {
+    width: 200px;
+    border-radius: 79%;
+    padding: 39px 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
-/*Sometime i'll find the way to make this right, but for now it's working on the duct tape */
+.flex_icons img:hover {
+    border-radius: 5px;
+    border: 3px #b1b1b1 solid;
+}
 
 footer {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    padding: 0;
-}
-
-.fotdiv1 {
-    display: inline-block;
-    padding-left: 20px;
-}
-
-.fotdiv2 {
-    display: inline-block;
-    float: right;
-    padding-right: 20px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 100px;
+    font-size: 20px;
 }
