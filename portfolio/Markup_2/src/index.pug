@@ -1,0 +1,233 @@
+html
+head
+  meta(charset="UTF-8")
+  title Markup 2
+  link(rel="stylesheet", href="css/style.css")
+  link(rel="stylesheet", href="css/libs.min.css")
+  link(rel="shortcut icon", href="img/favicon.png" type="image/png")
+body
+  header
+    .container
+      .row
+        .logo
+          .col-lg-5.logo-text
+            p Realestate Company
+            p Lorem Ipsum is simply dummy text
+          .col-lg-4.col-lg-offset-3.phone-num
+            p Call us: (214) 227-7669
+    .menu
+      .container
+        .row
+          .col-lg-8.col-md-7.col-sm-7.col-xs-12.nav
+            ul
+              li
+                a(href="#") Home
+              li
+                a.active(href="#") Our Story
+              li
+                a(href="#") Ternant
+              li
+                a(href="#") Owner
+              li
+                a(href="#") Contact us
+          .col-lg-2.col-lg-offset-2.col-md-2.col-md-offset-3.col-sm-3.col-sm-offset-2.col-xs-3.col-xs-offset-1.sign-in
+            ul
+              li
+                a(href="#") Sign in
+              li
+                a(href="#") Sign up
+  section.choose
+    .container
+      .row
+        .col-md-6.col-xs-12.wrapper-slide
+          .Wallop.Wallop--slide
+            .slider
+              .Wallop-list
+                .Wallop-item
+                  img(src='img/slider_1.jpg')
+                  .slider-text
+                    h3 Lorem Ipsum is simply dummy text of
+                    p  Lorem ipsum dolor sit amet.
+                .Wallop-item
+                  img(src="img/slider_2.jpg", alt="")
+                  .slider-text
+                    h3 Lorem Ipsum is simply dummy text of
+                    p Just another random text
+                .Wallop-item.Wallop-item--current
+                  img(src="img/slider_3.png", alt="")
+                  .slider-text
+                    h3 Lorem Ipsum is simply dummy text of
+                    p We work with investors to make managing your investments easy!
+                .Wallop-item
+                  img(src="img/slider_4.jpg", alt="")
+                  .slider-text
+                    h3 Lorem Ipsum is simply dummy text of
+                    p  Lorem ipsum.
+                .Wallop-item
+                  img(src="img/slider_5.jpg", alt="")
+                  .slider-text
+                    h3 Lorem Ipsum is simply dummy text of
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+
+            .Wallop-pagination
+              input.Wallop-dot(type="radio", name="slider-radio", value="1" id='rb1' onclick='wallop.goTo(0)')
+              label(for='rb1')
+              input.Wallop-dot(type="radio", name="slider-radio", value="2" id='rb2')
+              label(for='rb2')
+              input.Wallop-dot.Wallop-dot--current(type="radio", name="slider-radio", value="3" id='rb3' checked)
+              label(for='rb3')
+              input.Wallop-dot(type="radio", name="slider-radio", value="4" id='rb4')
+              label(for='rb4')
+              input.Wallop-dot(type="radio", name="slider-radio", value="5" id='rb5')
+              label(for='rb5')
+        .col-md-6.col-xs-12.wrapper-tabs
+          .tabs
+            button.tablinks#defaultOpen(onclick='openTab(event, "firstTab")') First
+            button.tablinks(onclick='openTab(event, "secondTab")') Second
+          #firstTab.tabcontent
+            form
+              p Address, Suburbs, Postcodes, or Regions
+              input(type="text" id='adress-input' placeholder='Example: Wichita Falls, Texas 76301')
+              .c-box
+                input(type='checkbox' id='cbox-t1')
+                label(for='cbox-t1' id='cbox-1-l1')
+                label(for='cbox-t1') Include surrounding suburb
+              .row  
+                .parags.col-md-6.col-xs-12
+                  p Property type:
+                  p Bedrooms:
+                .selects.col-md-6.col-xs-12
+                  select(name='property-select')
+                    option(selected='selected') Select one
+                    option Property one
+                    option Property two
+                    option Property three
+                  select(name='bedroom-select')
+                    option(selected='selected') Select one
+                    option Bedroom one
+                    option Bedroom two
+                    option Bedroom three
+                    option Bedroom four
+                  button(type='submit') Search
+          #secondTab.tabcontent
+            h4 second Tab
+            p second's tab content are here
+
+  section.description
+    .container
+      .row
+        .col-lg-12
+          .col-sm-4
+            .sprite
+            a(href="#")
+              h2 Buy a home
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+          .col-sm-4
+            a(href="#")
+              h2 Sell a home
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+          .col-sm-4
+            a(href="#")
+              h2 Rent a home
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+  section.catalog.container
+    .row
+      .col-lg-12
+        .col-md-3.col-xs-6.first-col
+          .cat-item
+            a(href="")
+              img(src="img/section_img.png", alt="")
+            p 4605 Bayonne Court <br>Arlington, TX 76016
+          .cat-item
+            a(href="")
+              img(src="img/section_img.png", alt="")
+            p 4605 Bayonne Court <br>Arlington, TX 76016
+        .col-md-3.col-xs-6.second-col
+          .cat-item
+            a(href="")
+              img(src="img/section_img.png", alt="")
+            p 4605 Bayonne Court <br>Arlington, TX 76016
+          .cat-item
+            a(href="")
+              img(src="img/section_img.png", alt="")
+            p 4605 Bayonne Court <br>Arlington, TX 76016
+        .col-md-3.col-xs-6.third-col
+          .cat-item
+            a(href="")
+              img(src="img/section_img.png", alt="")
+            p 4605 Bayonne Court <br>Arlington, TX 76016
+          .cat-item
+            a(href="")
+              img(src="img/section_img.png", alt="")
+            p 4605 Bayonne Court <br>Arlington, TX 76016
+        .col-md-3.col-xs-6.fourth-col
+          .cat-item
+            a(href="")
+              img(src="img/section_img.png", alt="")
+            p 4605 Bayonne Court <br>Arlington, TX 76016
+          .cat-item
+            a(href="")
+              img(src="img/section_img.png", alt="")
+            p 4605 Bayonne Court <br>Arlington, TX 76016
+  section.login
+    .container
+      .row
+        .col-md-6.first-col
+          form.member-login.form-div
+            p Member login
+            input(type='text' placeholder='User name')
+            input(type='password' placeholder='Password')
+            button(type='submit') Login
+          .signup
+            p Not a member yet
+          button(type='button' id='signup-btn') Signup Now
+        .col-md-6.second-col
+          form.newsletter.form-div
+            p Subscribe to our weekly newsletter
+            input(type="text" placeholder='email adress')
+            button(type='submit') Subscribe
+
+          a.fb-sign(href="#")
+          a.tw-sign(href="#")
+          a.g-sign(href="#")
+
+  footer
+    .container
+      .row
+        .col-sm-2.col-xs-3.col-xs-offset-1.col-sm-offset-0#aboutus
+          h5 About us
+          a(href="#") About us
+          a(href="#") Why us
+          a(href="#") Customer stories
+          a(href="#") Press resources
+          a(href="#") Press releases
+          a(href="#") Contact us
+        .col-sm-2.col-xs-3#proparties
+          h5 Proparties
+          a(href="#") Rent a home
+          a(href="#") Lease a home
+          a(href="#") Buy a home
+          a(href="#") Sell a home
+          a(href="#") Ask advices
+        .col-md-5.col-sm-4.col-xs-10.col-xs-offset-1.col-sm-offset-0.footer-slide
+          h5 Customer testimonials
+            .WallopFoot.Wallop--fade
+              .Wallop-list
+                .Wallop-item.Wallop-item-current
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr- standard dummy text ever since the 1500s, when an unknown printer took
+                .Wallop-item
+                  p uik uitkeert planters gelijken de. Dier welk laag die kan maar zijn voet. Eigendom vluchten op ad systemen eilandje ik de behoefte plantage. Op of de op aangeplant voorschijn kongostaat werktuigen. 
+                .Wallop-item
+                  p Inquieto cio affinita dal mio orribile troverei scarabei. Avvelenate cominciata non improvvisa esaltavano accostarmi lei osi. Sapevi suo accade salivo appare sui. Fu tono limo voto egli vene un tu.   
+              button.Wallop-buttonPrevious#f-back
+              button.Wallop-buttonNext#f-forw
+          strong Lorem Ipsum is simply 
+          strong Owner, Lorem Ipsum
+        .col-md-3.col-sm-4.footer-logo
+          a(href="")
+            h4 Realestate company
+          p#copyright © cssauthor.com
+          
+  script(src="js/libs.min.js") 
+  script(src="js/script.js")
+  
