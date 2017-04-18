@@ -46,3 +46,12 @@ function removeClass(element, className) {
   if (!element) { return; }
   element.className = element.className.replace(className, '');
 }
+
+//.active
+var $nav = $(".nav"),
+    $navItems = $nav.find("a");
+
+$navItems.on("click", function(){
+  $nav.children().removeClass("active");
+  $(this).addClass("active");
+});

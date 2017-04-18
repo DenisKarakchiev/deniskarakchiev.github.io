@@ -6,7 +6,9 @@
 body
   @media (max-width: 992px)
     overflow-x: hidden
-
+  min-width: 500px
+  @media (max-width: 500px)
+    overflow-x: auto
 img.logo
   display: block
   padding-top: 65px
@@ -153,6 +155,8 @@ article
       position: absolute
       padding-top: 80px
       margin-left: -50px
+      margin-left: auto
+      margin-right: auto
       @media (max-width: 1199px)
         margin-left: -100px
       @media (max-width: 990px)
@@ -167,7 +171,7 @@ article
         margin-left: -20%
         top: -40%
       @media (max-width: 555px)
-        margin-left: -30%
+        margin-left: -150px
     h2
       +h2
       position: relative
@@ -176,6 +180,9 @@ article
       +p-article
       position: relative
       padding: 0px 50px 50px 50px
+      @media (max-width: 575px)
+        &:last-child
+          margin-top: -60px
     .clip-wrap
       display: inline-block
       vertical-align: top
@@ -292,6 +299,7 @@ article
     overflow: hidden
     margin-right: 0px
     width: inherit
+
     .map-form
       width: 430px
       height: 430px
@@ -308,6 +316,10 @@ article
         left: 18%
       @media (max-width: 580px)
         left: 15%
+      @media (max-width: 560px)
+        left: 12%
+      @media (max-width: 530px)
+        left: 7%
       .map-form-inputs
         position: absolute
         top: 115px
@@ -370,18 +382,3 @@ footer
 
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content
   opacity: 0
-
-.easter-egg
-  display: none
-
-@media (max-width: 380px)
-  header,
-  article,
-  .choise-section
-    display: none !important
-      
-  .easter-egg
-    margin: 5%
-    font-family: 'OpenSansSemibold'
-    font-size: 15px
-    display: block
