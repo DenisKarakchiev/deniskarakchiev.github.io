@@ -1,196 +1,21 @@
-@media (max-width: 1024px) {
-  section.header .heading {
-    width: 80%;
-    top: 30vh;
-  }
-  section.header .heading h1 {
-    font-size: 4vw;
-  }
-  section.header .heading p {
-    font-size: 1.8vw;
-  }
-  .header .button-wrap button {
-    padding: 12px 4.5vw;
-    font-size: 1.95vw;
-  }
-}
-
-@media (max-width: 1300px) {
-  .ceo .person {
-    width: 850px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header .button-wrap {
-    left: 43%;
-    width: 29%;
-  }
-}
-
-@media (max-width: 700px) {
-  section.header nav button {
-    display: block;
-  }
-  section.header nav ul {
-    display: block;
-    opacity: 0;
-    position: absolute;
-    width: 145px;
-    background-color: rgba(252, 100, 95, 0.2);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    border: 2px solid #232021;
-  }
-  section.header nav ul a {
-    margin: 10px 0 10px 30px;
-    display: block;
-    height: 30px;
-    box-sizing: border-box;
-    opacity: 0;
-  }
-  .header .heading h1::before,
-  .header .heading h1::after {
-    height: 5px;
-  }
-  section.header .heading h1 {
-    /*width: 100%;*/
-    font-size: 6vw;
-  }
-  section.header .heading {
-    width: 100%;
-  }
-  .section.header .heading p {
-    font-size: 5vw;
-  }
-  .header .heading p span {
-    display: block;
-  }
-  section.header .button-wrap button {
-    /*font-size: 5vw;*/
-    font-size: 18px;
-    margin-left: -5vw;
-  }
-  .members .member {
-    margin: 0 10px;
-    display: block;
-    position: relative;
-    left: 0;
-    height: 185px;
-    width: 540px;
-    margin: 0 auto;
-    margin-right: 0;
-  }
-  .members .member:last-child {
-    margin-right: 60px;
-  }
-  .team .members {
-    width: 100%;
-  }
-  .team .h2 {
-    margin: 15px auto;
-    text-align: center;
-    padding-bottom: 0px;
-  }
-  section.team .members .member img {
-    margin: 0 10px;
-  }
-  .team h3,
-  .team .member p,
-  .team .member .wrapper {
-    position: relative;
-    top: -155px;
-    width: 200px;
-    margin: 0 auto;
-    /*left: -10vw;*/
-  }
-  .team .member p {
-    /*left: 280px;*/
-    /*margin: 0 0;*/
-  }
-  .team .member .wrapper {
-    width: 161px;
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 580px) {
-  .ceo .person p:first-child {
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    width: 51%;
-    margin-top: 20px;
-  }
-  .ceo .buttons {
-    margin: 20vh auto 0 auto;
-  }
-}
-
-@media (max-width: 810px) {
-  .process .steps {
-    background-image: none;
-    display: block;
-    margin-left: 10vw;
-    margin-top: 15%;
-    width: 100%;
-    min-width: 100%;
-  }
-  .process .steps>* {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-bottom: 10vh;
-    margin-right: 5vw;
-    width: 40%;
-    display: inline-block;
-  }
-  .process .steps>* p {
-    width: 100%;
-  }
-  .process .steps>* a::before {
-    position: absolute;
-    top: 0;
-    left: 2%;
-  }
-  .process .steps .step1::after {
-    display: none;
-  }
-  .process .steps .step4 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 40%;
-  }
-  .process .steps .step4 a::after {
-    display: none;
-  }
-}
-
-@media (min-width: 701px) {
-  .header nav ul,
-  .header nav ul a {
-    opacity: 1 !important;
-  }
-}
-
 @media (max-width: 1366px) {
   .portfolio h1 {
     margin: 0 auto;
     top: 0;
   }
+  .person {
+    width: 850px;
+  }
 }
 
 @media (max-width: 1280px) {
-  .we-do .wrap,
-  .advertising .wrap,
-  .markit .wrap {
+  .wrap,
+  .wrap,
+  .wrap {
     width: 930px;
     margin: 0 auto;
   }
-  .we-do .wrap .text,
+  .we-do .text,
   .advertising .text,
   .markit .text {
     width: 385px;
@@ -200,8 +25,49 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .choise h2,
+  .choise>p {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .elements {
+    display: inline-block;
+    width: 100%;
+  }
+  .element {
+    width: 40%;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .elements p {
+    margin-bottom: 1.9vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .element .shape {
+    margin: -10px;
+    transform: scale(0.8);
+  }
+  .heading {
+    width: 80%;
+    top: 30vh;
+  }
+  .heading h1 {
+    font-size: 4vw;
+  }
+  .heading p {
+    font-size: 1.8vw;
+  }
+  .header .button-wrap button {
+    padding: 12px 4.5vw;
+    font-size: 1.95vw;
+  }
+}
+
 @media (max-width: 1000px) {
-  .we-do .wrap .text,
+  .we-do .text,
   .advertising .text,
   .markit .text {
     display: block;
@@ -219,7 +85,7 @@
     display: block;
     margin: 0 auto;
   }
-  .we-do .text button,
+  .we-do button,
   .advertising button,
   .markit button,
   .portfolio button {
@@ -250,10 +116,10 @@
     margin: 0 auto;
     transform: scale(0.9);
   }
-  section.advertising {
+  .advertising {
     padding-top: 10px;
   }
-  section.advertising text {
+  .advertising text {
     width: 500px !important;
   }
   .markit {
@@ -267,16 +133,16 @@
     width: 120px;
     height: 100px;
   }
-  .portfolio .row1 a:first-child img,
-  .portfolio .row2 a:last-child img {
+  .row1 a:first-child img,
+  .row2 a:last-child img {
     width: 250;
   }
-  .portfolio .images a:hover::after {
+  .images a:hover::after {
     top: -3px;
     left: 35px;
   }
-  .portfolio .row1 a:first-child:hover::after,
-  .portfolio .row2 a:last-child:hover::after {
+  .row1 a:first-child:hover::after,
+  .row2 a:last-child:hover::after {
     top: -5px;
     left: 95px;
   }
@@ -287,57 +153,154 @@
   .portfolio ul li:not(:last-child)::after {
     margin: 0 15px;
   }
-  .members .member {
+  .member {
     margin-right: 60px;
   }
-  .team .members {
+  .members {
     width: 708px;
   }
-  .ceo .person {
+  .person {
     width: 825px;
   }
 }
 
 @media (max-width: 830px) {
-  .ceo .person {
+  .person {
     width: 632px;
   }
-  .ceo .person p {
+  .person p {
     width: 200px;
   }
 }
 
-@media (max-width: 1100px) {
-  .choise h2,
-  .choise>p {
-    margin-bottom: 20px;
-    margin-top: 0;
-  }
-  .choise .elements {
-    display: inline-block;
+@media (max-width: 810px) {
+  .steps {
+    background-image: none;
+    display: block;
+    margin-left: 10vw;
+    margin-top: 15%;
     width: 100%;
+    min-width: 100%;
   }
-  .choise .elements .element {
+  .steps>* {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10vh;
+    margin-right: 5vw;
     width: 40%;
     display: inline-block;
-    margin: 0 auto;
   }
-  .choise .elements p {
-    margin-bottom: 1.9vh;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  .steps>* p {
+    width: 100%;
   }
-  .choise .elements .element .shape {
-    margin: -10px;
-    transform: scale(0.8);
+  .steps>* a::before {
+    position: absolute;
+    top: 0;
+    left: 2%;
+  }
+  .step1::after {
+    display: none;
+  }
+  .step4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40%;
+  }
+  .step4 a::after {
+    display: none;
   }
 }
 
-@media (max-height: 720px) {
-  section.process .text {
-    width: 41%;
-    margin: 1% auto;
+@media (max-width: 700px) {
+  .header nav button {
+    display: block;
+  }
+  .header nav ul {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 145px;
+    background-color: rgba(252, 100, 95, 0.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px solid #232021;
+  }
+  .header nav ul a {
+    margin: 10px 0 10px 30px;
+    display: block;
+    height: 30px;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  .heading h1::before,
+  .heading h1::after {
+    height: 5px;
+  }
+  .heading h1 {
+    font-size: 6vw;
+  }
+  .heading {
+    width: 100%;
+  }
+  .heading p {
+    font-size: 5vw;
+  }
+  .heading p span {
+    display: block;
+  }
+  .header .button-wrap button {
+    font-size: 18px;
+    margin-left: -5vw;
+  }
+  .member {
+    margin: 0 10px;
+    display: block;
+    position: relative;
+    left: 0;
+    height: 185px;
+    width: 540px;
+    margin: 0 auto;
+    margin-right: 0;
+  }
+  .members {
+    width: 100%;
+  }
+  .team .h2 {
+    margin: 15px auto;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  .member img {
+    margin: 0 10px;
+  }
+  .team h3,
+  .member p,
+  .member .wrapper {
+    position: relative;
+    top: -155px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .member .wrapper {
+    width: 161px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .person p:first-child {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 51%;
+    margin-top: 20px;
+  }
+  .buttons {
+    margin: 20vh auto 0 auto;
   }
 }
 
@@ -347,39 +310,39 @@
     margin: 0;
     font-size: 16px;
   }
-  .choise .elements .element {
+  .element {
     display: block;
     margin: 10px auto;
     width: 100%;
     position: relative;
   }
-  .choise .elements .element p {
+  .element p {
     display: none;
   }
-  .choise .elements .element .shape {
+  .element .shape {
     margin: -30px;
     transform: scale(0.5);
   }
-  .choise .elements .element h3::after {
+  .element h3::after {
     display: none;
   }
-  .choise .elements .element h3 {
+  .element h3 {
     display: inline-block;
     width: 60%;
     vertical-align: middle;
     margin-top: 30px;
   }
-  .choise .elements .element h3,
-  .choise .elements .element .shape {
+  .element h3,
+  .element .shape {
     display: inline-block;
   }
-  .choise .elements h2 {
+  .elements h2 {
     margin-top: -100px;
   }
-  section.choise {
+  .choise {
     margin-top: 0;
   }
-  section.join .wrapper {
+  .join .wrapper {
     width: 70vw;
   }
   .join .wrapper h1 {
@@ -391,33 +354,33 @@
     width: 150px;
     padding: 12px 35px;
   }
-  section.process .text {
+  .process div.text {
     width: 100%;
     margin: 20px 0;
   }
   .process .text p {
     font-size: 18px;
   }
-  .process .steps {
+  .steps {
     margin-top: 0;
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .process .steps>* {
+  .steps>* {
     width: 90%;
     margin-bottom: 2vh;
   }
-  .process .steps>* p {
+  .steps>* p {
     width: 80%;
     margin: 0 auto;
   }
-  .process .steps>* a::before {
+  .steps>* a::before {
     left: 10%;
   }
-  .process .steps .step4 {
+  .steps .step4 {
     width: 90%
   }
-  .we-do .wrap .text,
+  .we-do .text,
   .advertising .text,
   .markit .text {
     width: 100%;
@@ -431,7 +394,7 @@
     left: -130px;
     top: -72px;
   }
-  .we-do .text h2,
+  .we-do h2,
   .advertising h2,
   .markit h2 {
     font-size: 22px;
@@ -453,32 +416,29 @@
     transform: scale(0.5);
     left: -110px;
     top: 0px;
-    /*margin: 0 auto;
-    width: 500px;*/
   }
   .portfolio .images a {
     display: inline-block;
     background-color: #fff;
     width: 120px;
   }
-  .portfolio .images .row1 a:nth-child(2),
-  .portfolio .images .row2 a:nth-child(1) {
+  .row1 a:nth-child(2),
+  .row2 a:nth-child(1) {
     margin-left: 10vw;
   }
-  .portfolio .row1 a:first-child,
-  .portfolio .row2 a:last-child {
-    /*width: 100%;*/
+  .row1 a:first-child,
+  .row2 a:last-child {
     width: 250px;
     display: block;
     background-color: #fff;
     margin-left: 10vw;
   }
-  .portfolio .images a:hover::after {
+  .images a:hover::after {
     top: -3px;
     left: 35px;
   }
-  .portfolio .row1 a:first-child:hover::after,
-  .portfolio .row2 a:last-child:hover::after {
+  .row1 a:first-child:hover::after,
+  .row2 a:last-child:hover::after {
     top: -5px;
     left: 95px;
   }
@@ -503,37 +463,70 @@
   .team h2 {
     margin: 5px auto;
   }
-  .team .members .member {
+  .member {
     width: 500px;
     margin-right: 200px;
   }
   .team h3,
-  .team .member p,
-  .team .member .wrapper {
+  .member p,
+  .member .wrapper {
     margin-left: 40vw;
   }
   .team h3 {
     font-size: 8vw;
     width: 30%;
   }
-  .team .member p {
+  .member p {
     position: relative;
     right: 25px;
   }
-  .team .member a {
+  .member a {
     margin-right: 3vw;
   }
-  .team .member .wrapper {
+  .member .wrapper {
     margin-top: 0;
   }
-  .team .members .member .wrapper a {
+  .member .wrapper a {
     margin-right: 2vw;
   }
-  /*.footer .logo a {
+}
+
+@media (max-width: 375px) {
+  .member {
+    height: 45vw;
+  }
+  .member img {
+    width: 35vw;
+  }
+  .team h3,
+  .member p,
+  .member .wrapper {
+    top: -90%;
+  }
+  .person>* {
+    display: block !important;
+  }
+  .person {
+    width: 100%;
+  }
+  .person p:first-child {
+    position: relative !important;
     top: 0;
-    position: initial;
-    padding-top: 2%;
-  }*/
+    left: 0 !important;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  .person img {
+    width: 160px;
+    margin: 0 auto;
+  }
+  .buttons {
+    margin: 0 auto;
+  }
+  .ceo .txt-wrap {
+    width: 200px;
+    margin: 20px auto;
+  }
 }
 
 @media (max-height: 533px) and (max-width: 320px) {
@@ -543,68 +536,34 @@
   .process .text h2 {
     font-size: 27px;
   }
-  .ceo .person h2 {
+  .person h2 {
     margin-bottom: 0 !important;
   }
   .ceo .txt-wrap {
     margin: 0 auto !important;
   }
-  /*.ceo .p:first-child {
-    margin: 0 auto !important;
-  }*/
   .ceo .buttons button:last-child {
     margin: 10px 0 0 20px;
   }
 }
 
-@media (max-width: 375px) {
-  .team .members .member {
-    height: 45vw;
+@media (min-width: 1024px) {
+  .header .button-wrap {
+    left: 43%;
+    width: 29%;
   }
-  .team .h2 {
-    /*margin: 10px auto;*/
-    /*top: 5vw;*/
+}
+
+@media (min-width: 701px) {
+  .header nav ul,
+  .header nav ul a {
+    opacity: 1 !important;
   }
-  section.team .members .member img {
-    width: 35vw;
-  }
-  .team h3,
-  .team .member p,
-  .team .member .wrapper {
-    /*position: relative;
-    top: -155px;
-    width: 200px;
-    margin: 0 auto;
-    left: -10vw;*/
-    top: -90%;
-  }
-  .ceo .person>* {
-    display: block !important;
-  }
-  .ceo .person {
-    width: 100%;
-  }
-  section.ceo .person p:first-child {
-    position: relative !important;
-    top: 0;
-    left: 0 !important;
-    margin-bottom: 20px;
-    width: 90%;
-  }
-  .ceo .person img {
-    width: 160px;
-    margin: 0 auto;
-  }
-  .ceo .buttons {
-    margin: 0 auto;
-  }
-  /*.ceo .person p,
-  .ceo .person h2 {
-    width: 100px;
-    margin: 0 auto;
-  }*/
-  .ceo .txt-wrap {
-    width: 200px;
-    margin: 20px auto;
+}
+
+@media (max-height: 720px) {
+  .process .text {
+    width: 41%;
+    margin: 1% auto;
   }
 }

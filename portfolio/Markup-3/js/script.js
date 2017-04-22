@@ -12,12 +12,15 @@ $('.main').onepage_scroll({
   direction: 'vertical'
 });
 
-$('nav button').click(func);
+$('nav button').click(menuDropping);
 
-function func() {
+function menuDropping() {
 
-  if ($('nav ul').hasClass('dropped')) {
-    $('nav ul').css({
+  var $menu = $('nav ul');
+  var $menuItem = $('nav ul a');
+
+  if ($menu.hasClass('dropped')) {
+    $menu.css({
       'opacity': '1',
       "margin-top": '10px'
     }).animate({
@@ -25,39 +28,27 @@ function func() {
       'margin-top': '0'
     });
 
-    $('nav ul a').animate({
+    $menuItem.animate({
       "margin-top": "-25px",
       'opacity': 0
     }, 1000);
 
   } else {
-    $('nav ul').css({
+    $menu.css({
       "opacity": "0"
     }).animate({
-      'opacity':'1',
+      'opacity': '1',
       'margin-top': '10px'
     }, 200, 'linear');
 
-    $('section.header nav ul a').css({
+    $menuItem.css({
       'margin-top': '-35px',
-      'opacity': '0' 
+      'opacity': '0'
     }).animate({
       'margin-top': '10px',
-      'opacity': '1' 
+      'opacity': '1'
     }, 500, 'linear');
   };
 
-  $('nav ul').toggleClass('dropped');
+  $menu.toggleClass('dropped');
 }
-
-// var mq = window.matchMedia("(max-width: 525px)");
-// if (mq.matches) {
-//   var $headerOne = $('.Branding h3');
-
-//   $('.Branding .shape').replaceWith($('.Branding h3'));
-//   $('.Branding h3').after('<div class="shape"></div>');
-
-//   $
-// } else {
-//   //
-// }
