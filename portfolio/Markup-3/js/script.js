@@ -29,7 +29,6 @@ function menuDropping() {
     });
 
     $menuItem.animate({
-      "margin-top": "-25px",
       'opacity': 0
     }, 1000);
 
@@ -42,10 +41,8 @@ function menuDropping() {
     }, 200, 'linear');
 
     $menuItem.css({
-      'margin-top': '-35px',
       'opacity': '0'
     }).animate({
-      'margin-top': '10px',
       'opacity': '1'
     }, 500, 'linear');
   };

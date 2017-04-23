@@ -1,4 +1,5 @@
 @import url('_fonts.css');
+@import url('fontello.css');
 body,
 html {
   width: 100%;
@@ -94,16 +95,29 @@ span {
 
 .header nav button {
   display: none;
-  padding: 5px;
+  padding: 5px 0;
   margin-top: -40px;
+  font-size: 36px;
 }
 
-.header nav button div {
-  font-weight: 500;
-  font-size: 160px;
-  line-height: 16px;
-  position: relative;
-  top: -16px;
+.header button:hover,
+.join button:hover {
+  background-color: #fc635e;
+  color: #000;
+}
+
+.header button:active,
+.join button:active {
+  background-color: #ae4a45;
+}
+
+.header button,
+.join button {
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .heading {
@@ -262,6 +276,16 @@ span {
   width: 101px;
   height: 116px;
   top: 0;
+}
+
+.shape,
+.shape::after,
+.steps a::before {
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .element:hover .shape {
@@ -644,6 +668,21 @@ span {
   -moz-border-radius: 7px;
   border-radius: 7px;
   margin-top: 7vh;
+  cursor: pointer;
+}
+
+.we-do button:hover,
+.advertising button:hover,
+.markit button:hover,
+.portfolio button:hover {
+  background-color: #f83f38;
+}
+
+.we-do button:active,
+.advertising button:active,
+.markit button:active,
+.portfolio button:active {
+  background-color: #ff7e79;
 }
 
 .image {
@@ -1002,10 +1041,7 @@ span {
   margin: 0 auto;
 }
 
-.person p,
-.person img,
-.person h2,
-.person .txt-wrap,
+.person>*,
 .map .logo a::before {
   display: inline-block;
   vertical-align: middle;
@@ -1049,9 +1085,30 @@ span {
 
 .ceo button {
   border: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
   background-position: -273px -136px;
   width: 31px;
   height: 31px;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.ceo button:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.ceo button:active {
+  background-color: #000;
 }
 
 .ceo button:last-child {
@@ -1117,6 +1174,18 @@ span {
   display: block;
   top: 25%;
   position: relative;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+.map .logo a:hover {
+  color: #FC635E;
+}
+
+.map .logo a:active {
+  color: grey;
 }
 
 .map .logo a::before {
