@@ -1,7 +1,7 @@
 $('.main').onepage_scroll({
   sectionContainer: 'section',
   easing: 'ease',
-  animationTime: 100,
+  animationTime: 500,
   pagination: true,
   updateURL: false,
   beforeMove: function (index) {},
