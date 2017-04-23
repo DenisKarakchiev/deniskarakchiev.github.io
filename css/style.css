@@ -131,3 +131,9 @@ footer {
   bottom: 0; }
   footer p {
     font-size: 15px; }
+
+@media (min-width: 992px) {
+  .wrapper .first-tmbnl {
+    margin-left: 12.8%;
+  }
+}
