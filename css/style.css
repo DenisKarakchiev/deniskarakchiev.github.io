@@ -137,3 +137,12 @@ footer {
     margin-left: 12.8%;
   }
 }
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 25px !important;
+}
+
+body * {
+  font-family: 'Open Sans', sans-serif;
+}
