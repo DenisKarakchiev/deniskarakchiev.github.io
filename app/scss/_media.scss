@@ -1,0 +1,106 @@
+@import "vars";
+
+/*==========  Mobile First  ==========*/
+
+//>=576px
+@include media-breakpoint-up(sm) {
+    .header-screen {
+        min-height: 350px;
+        &__undertitle {
+            background-color:#e6e5e6;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 7.2px;
+        }
+    }
+    .h1 {
+        padding: 11px 40px;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 44px;
+    }
+    .menu {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 100%;
+
+        &__outer {
+            position: relative;
+            right: 0;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+        &__button {
+            display: none;
+        }
+    }
+    .socials {
+        &__item {
+            width: 45px;
+		height: 45px;
+        }
+    }
+}
+
+// >=768px
+@include media-breakpoint-up(md) {
+    .h1 {
+        font-size: 48px;
+    }
+    .h2 {
+        letter-spacing: 5px;
+        font-size: 18px;
+    }
+    .header-screen {
+        &__undertitle {
+            font-size: 18px;
+        }
+    }
+    .logo {
+        &__link {
+            font-size: 36px;    
+        }
+    }
+    
+}
+
+// >=992px
+@include media-breakpoint-up(lg) {
+    .menu__outer {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            transform: translateY(-50%);
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: #06060a;
+        }
+    }
+    .header-screen {
+        &__undertitle {
+            background-color:transparent;
+             
+        }
+    }
+    .footer {
+        margin-top: 60px;
+    }
+}
+
+// >=1200px
+@include media-breakpoint-up(xl) {
+	.header-screen {
+        background-position: center right 20%;
+    }
+}
