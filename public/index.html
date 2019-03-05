@@ -2,86 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!-- <base href="/">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">
     <title>uokersam/портфолио</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- Template Basic Images Start-->
     <meta property="og:image" content="path/to/image.jpg">
     <link rel="icon" href="img/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-    <!-- Template Basic Images End-->
-    <!-- Custom Browsers Color Start-->
     <meta name="theme-color" content="#000">
-    <!-- Custom Browsers Color End-->
     <link rel="stylesheet" href="css/main.min.css">
   </head>
-  <body>
-    <section class="first-screen">
+  <body class="body">
+    <div class="container">
       <header class="header">
-        <div class="container">
-          <div class="row">
-            <div class="col-6 col-sm-4 col-md-5">
-              <div class="logo"><a class="logo__link" href="//github.com/uokersam" target="_blank" title="Профиль в github">
-                  <!--img.logo__photo(src='img/photo.jpg', alt='Фото')-->
-                  <!--| 								uokersam--></a></div>
-            </div>
-          </div>
-        </div>
+        <div class="logo"><a class="logo__link" href="//github.com/uokersam" target="_blank" title="Профиль в github"></a></div>
       </header>
       <div class="header-screen">
-        <div class="container header-screen__bg">
-          <div class="row">
-            <div class="col-12">
-              <div class="header-screen__text">
-                <div class="header-screen__wrapper">
-                  <h1 class="h1">Денис Каракчиев</h1><br>
-                  <div class="header-screen__undertitle"></div>
-                </div>
-              </div>
-            </div>
+        <div class="header-screen__text">
+          <div class="header-screen__wrapper">
+            <h1 class="h1">Денис Каракчиев</h1><br>
+            <div class="header-screen__undertitle"></div>
           </div>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="footer__logo logo"><a class="logo__link" href="">uokersam</a></div>
+      <main class="main">
+        <ul class="links">
+          <li class="link"><a class="link__anchor" href="./toolbox/index.html">toolbox</a></li>
+        </ul>
+      </main>
+      <footer class="footer">
+        <div class="footer__socials-wrapper">
+          <h2 class="h2">Socials</h2>
+          <ul class="socials">
+            <li class="socials__item"><a class="socials__link socials__link_github" target="_blank" href="https://github.com/uokersam">github</a></li>
+            <li class="socials__item"><a class="socials__link socials__link_github" target="_blank" href="https://stackoverflow.com/users/8563148/uokersam">stackowerflow</a></li>
+            <li class="socials__item"><a class="socials__link socials__link_github" target="_blank" href="https://toster.ru/user/uokersam">toster</a></li>
+            <li class="socials__item"><a class="socials__link socials__link_codepen" target="_blank" href="https://codepen.io/uokersam">codepen</a></li>
+            <li class="socials__item"><a class="socials__link socials__link_vk" target="_blank" href="https://vk.com/uokersam/">vk</a></li>
+            <li class="socials__item"><a class="socials__link socials__link_ig" target="_blank" href="https://www.instagram.com/uokersam/">instagramm</a></li>
+            <li class="socials__item"><a class="socials__link socials__link_mail" target="_blank" href="mailto:uokersam@gmail.com">e-mail</a></li>
+          </ul>
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">2018 © Каракчиев Денис</p>
           </div>
         </div>
-      </div>
-      <div class="footer__socials-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <ul class="socials">
-                <li class="socials__item"><a class="socials__link socials__link_github" target="_blank" href="https://github.com/uokersam">github</a></li>
-                <li class="socials__item"><a class="socials__link socials__link_github" target="_blank" href="https://stackoverflow.com/users/8563148/uokersam">stackowerflow</a></li>
-                <li class="socials__item"><a class="socials__link socials__link_github" target="_blank" href="https://toster.ru/user/uokersam">toster</a></li>
-                <li class="socials__item"><a class="socials__link socials__link_codepen" target="_blank" href="https://codepen.io/uokersam">codepen</a></li>
-                <li class="socials__item"><a class="socials__link socials__link_vk" target="_blank" href="https://vk.com/uokersam/">vk</a></li>
-                <li class="socials__item"><a class="socials__link socials__link_ig" target="_blank" href="https://www.instagram.com/uokersam/">instagramm</a></li>
-                <li class="socials__item"><a class="socials__link socials__link_mail" target="_blank" href="mailto:uokersam@gmail.com">e-mail</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="footer__copyright">
-              <p class="footer__copyright-text">2018 © Каракчиев Денис</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="js/scripts.min.js"></script>
+      </footer>
+    </div>
   </body>
+  <script src="js/scripts.min.js"></script>
 </html>
