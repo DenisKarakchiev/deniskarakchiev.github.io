@@ -11,42 +11,48 @@ html(lang='ru')
         meta(property='og:image', content='path/to/image.jpg')
         link(rel='icon', href='img/favicon/favicon.ico')
         link(rel='apple-touch-icon', sizes='180x180', href='img/favicon/apple-touch-icon-180x180.png')
-        meta(name='theme-color', content='#000')
+        meta(name='theme-color', content='#11998e')
         link(rel='stylesheet', href='css/main.min.css')
     body.body
         .container
             header.header
                 .logo
-                    a.logo__link(href='//github.com/uokersam', target='_blank', title='Профиль в github')
-            .header-screen
-                .header-screen__text
-                    .header-screen__wrapper
-                        h1.h1 Denis Karakchiev
-                        br
-                        .header-screen__undertitle Web developer
+                    a.logo__link(href='//github.com/uokersam', target='_blank', title='Go to github profile')
+                        img.logo__link-image(src="img/photo.jpg")
+                .header-screen
+                    .header-screen__text
+                        .header-screen__wrapper
+                            h1.h1 Denis Karakchiev
+                            br
+                            .header-screen__undertitle Web developer
             main.main
                 h2.h2 Works
                 ul.tools__list
+                    li.tools__item: a.tools__link(href="https://github.com/uokersam/eizenbanum") eizenbanum
+                    li.tools__item: a.tools__link(href="https://github.com/uokersam/Laravel-5.7-Task-app") task app
                     li.tools__item: a.tools__link(href="./toolbox/index.html") toolbox
+                    li.tools__item: a.tools__link(href="https://github.com/uokersam/-Smooth_Minimal-") smooth-minimal
 
             footer.footer
                 .footer__socials-wrapper
                     h2.h2 Socials
                     ul.socials
                         li.socials__item
-                            a.socials__link.socials__link_github(target='_blank', href='https://github.com/uokersam') github
+                            a.socials__link.socials__link_github(target='_blank', href='https://github.com/uokersam' title="github.com") github
                         li.socials__item
-                            a.socials__link.socials__link_github(target='_blank', href='https://stackoverflow.com/users/8563148/uokersam') stackowerflow
+                            a.socials__link.socials__link_stackoverflow(target='_blank', href='https://stackoverflow.com/users/8563148/uokersam' title="stackoverflow.com") stackowerflow
                         li.socials__item
-                            a.socials__link.socials__link_github(target='_blank', href='https://toster.ru/user/uokersam') toster
+                            a.socials__link.socials__link_toster(target='_blank', href='https://toster.ru/user/uokersam' title="toster.ru") toster
                         li.socials__item
-                            a.socials__link.socials__link_codepen(target='_blank', href='https://codepen.io/uokersam') codepen
+                            a.socials__link.socials__link_codepen(target='_blank', href='https://codepen.io/uokersam' title="codepen.io") codepen
                         li.socials__item
-                            a.socials__link.socials__link_vk(target='_blank', href='https://vk.com/uokersam/') vk
+                            a.socials__link.socials__link_vk(target='_blank', href='https://vk.com/uokersam/' title="vk.com") vk
                         li.socials__item
-                            a.socials__link.socials__link_ig(target='_blank', href='https://www.instagram.com/uokersam/') instagramm
+                            a.socials__link.socials__link_ig(target='_blank', href='https://www.instagram.com/uokersam/' title="instagram.com") instagramm
                         li.socials__item
-                            a.socials__link.socials__link_mail(target='_blank', href='mailto:uokersam@gmail.com') e-mail
+                            a.socials__link.socials__link_mail(target='_blank', href='mailto:uokersam@gmail.com' title="email") email
                     .footer__copyright
-                        p.footer__copyright-text 2018 © Каракчиев Денис
-    script(src='js/scripts.min.js')
+                        p.footer__copyright-text
+                            span.footer__copyright-text-year 2019
+                            |  © Karakchiev Denis
+    script(src='scripts.min.js')
