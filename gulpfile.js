@@ -27,7 +27,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('styles', function() {
-  return gulp.src('app/sass/**/*.sass').
+  return gulp.src('app/styles/**/*.scss').
       pipe(sass({outputStyle: 'expanded'}).on('error', notify.onError())).
       pipe(rename({suffix: '.min', prefix: ''})).
       pipe(autoprefixer(['last 4 versions'])).
@@ -68,7 +68,7 @@ gulp.task('files', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('app/sass/**/*.sass',
+  gulp.watch('app/styles/**/*.scss',
       gulp.parallel('styles'));
   gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
   gulp.watch('app/**/*.pug', gulp.parallel('code', 'pug'));
