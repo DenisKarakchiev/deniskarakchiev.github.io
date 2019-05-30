@@ -1,17 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Denis Karakchiev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: calc(10px + 0.33vw);
+            -webkit-font-smoothing: antialiased;
+            padding: 5vh 10vw;
+            color: #121314;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            line-height: 1.4;
+            max-width: 26em;
+            font-weight: 500;
+            font-size: 2.2em
+        }
+
+        p {
+            font-size: 1.6em;
+            font-weight: 300;
+            line-height: 1.4;
+            max-width: 26em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #121314;
+            position: relative;
+        }
+
+        a:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 60%;
+            left: -0.1em;
+            right: -0.1em;
+            bottom: 0;
+            transition: top 200ms cubic-bezier(0, .8, .13, 1);
+            background-color: rgba(79, 192, 141, 0.5);
+        }
+
+        a:hover:after {
+            top: 0;
+        }
+    </style>
 </head>
-
 <body>
-    <script>
-        document.location.replace('./public/index.html');
-    </script>
+<h1>Hello.</h1>
+<h2>
+    My name is Denis Karakchiev.
+</h2>
+<p>
+    I am a web developer in Krasnodar, Russia.
+    My open source works is on
+    <a href="https://github.com/uokersam" target="_blank">GitHub</a> and
+    <a href="https://codepen.io/uokersam/" target="_blank">Codepen</a>.
+</p>
+<p>
+    Also here is my
+    <a href="https://stackoverflow.com/users/8563148/uokersam" target="_blank">stackoverflow</a>
+    account and <a href="mailto:uokersam@gmail.com" target="_blank">email</a>.
+    If you want to take a look at me - here is the
+    <a href="https://www.instagram.com/uokersam/" target="_blank">instagramm</a> account 😉
+</p>
+<p>
+    I love to build something. Happy when I manage to find an effective, simple & beautiful solution.
+    I believe that programming is not just about
+    writing code, but about problem solving.
+</p>
+<p>
+    Outside of work, i like to just walk around this beautiful city,
+    help my girlfriend with everything and regularly compete with myself 🙃
+</p>
 </body>
-
 </html>
